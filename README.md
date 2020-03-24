@@ -10,7 +10,12 @@
 ![GitHub issues](https://img.shields.io/github/issues/HightechSec/covid-19-telegram_bot)
 ![GitHub watchers](https://img.shields.io/github/watchers/HightechSec/covid-19-telegram_bot)
 
+
+
 Telegram bot about Corona Virus (COVID-19) Information in Indonesia
+
+![1](https://raw.githubusercontent.com/HightechSec/covid-19-telegram_bot/master/img/cor2.jpg)
+![2](https://raw.githubusercontent.com/HightechSec/covid-19-telegram_bot/master/img/cor1.jpg)
 
 # Docker
 
