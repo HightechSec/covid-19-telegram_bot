@@ -1,5 +1,6 @@
 # COVID-19 Telegram Bot (Indonesian)
-![License](https://img.shields.io/badge/License-GPL-blue.svg?style=plastic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hightechsec/covid-19-telegram_bot.svg?style=flat)](https://hub.docker.com/r/hightechsec/covid-19-telegram_bot)
+![License](https://img.shields.io/badge/License-GPL-blue.svg?style=flat)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/HightechSec/covid-19-telegram_bot)
 ![GitHub repo size](https://img.shields.io/github/repo-size/HightechSec/covid-19-telegram_bot)
 ![GitHub last commit](https://img.shields.io/github/last-commit/HightechSec/covid-19-telegram_bot)
@@ -11,16 +12,23 @@
 
 Telegram bot about Corona Virus (COVID-19) Information in Indonesia
 
-## Run this image
+# Docker
 
 To run this image you need [docker](http://docker.com) installed. Just run the command:
+- Run this first `docker pull hightechsec/covid-19-telegram_bot` 
+- Create .env file with TELEGRAM_BOT_TOKEN=BOT_TOKEN inside it, Change the BOT_TOKEN with your Bot Token
+- then continue to run this `docker run --name covidbot --env-file /path/to/your/.env -it --rm hightechsec/covid-19-telegram_bot:latest`
 
-- TODO
+## Build Manual Image
 
+- Clone this repo (`https://github.com/HightechSec/covid-19-telegram_bot`)
+- Change BOT_TOKEN in .env with your Bot Token
+- Then run `docker build -t "covidbot" .` and wait untill it's done 
+- If the build is clear, run this command `docker run --name covidbot -d --rm -it covidbot`
 
 ## Deploying Manually 
 
-- Fill const TELEGRAM_BOT_TOKEN in index.js with your Bot Token
+- Change BOT_TOKEN in .env with your Bot Token
 - then run `npm install`
 - and then `npm start`
 
