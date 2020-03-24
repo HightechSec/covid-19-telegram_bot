@@ -25,6 +25,4 @@ To run this image you need [docker](http://docker.com) installed. Just run the c
 - and then `npm start`
 
 # Greets
-- Thanks to @mathdroid https://github.com/mathdroid/covid-19-api and @k1m0ch1 https://github.com/k1m0ch1/covid-19-api/ for the API
-
-
+- Thanks to @mathdroid https://github.com/mathdroid/covid-19-api and @k1m0ch1 https://github.com/k1m0ch1/covid-19-api/ for the API.
