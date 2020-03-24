@@ -1,0 +1,20 @@
+{
+  "name": "COVID19-Telegram-Bot",
+  "version": "1.0.1",
+  "description": "Telegram Bot with Indonesian Data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no testing specified\" && exit 1"
+  },
+  "author": "Hightech",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "telegraf": "^3.36.0"
+  }
+}
+
