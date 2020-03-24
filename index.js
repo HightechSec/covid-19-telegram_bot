@@ -11,8 +11,9 @@ const EJS = require('ejs')
 
 const Telegraf = require('telegraf')
 const TelegrafExtra = require('telegraf/extra')
+require('dotenv').config()
 
-const TELEGRAM_BOT_TOKEN = "BOT Token"
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_BOT_START_TEXT = `
 *Bot Informasi Corona Virus (COVID-19) Indonesia*
 
