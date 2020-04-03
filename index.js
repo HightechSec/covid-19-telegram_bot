@@ -21,11 +21,11 @@ const TELEGRAM_BOT_START_TEXT = `
 ======================
 
 /start                    \`This description\`
-/indo                     \`Data Kasus COVID19 Indonesia\`
-/provinsi               \`Data Kasus COVID19 Per Provinsi\`
-/hotline                 \`Informasi Layanan Darurat COVID19\`
-/info                      \`Data Info mengenai COVID19\`
-/cegah                  \`Info Pencegahan COVID19\`
+/indo                     \`Data Kasus COVID-19 Indonesia\`
+/provinsi               \`Data Kasus COVID-19 Per Provinsi\`
+/hotline                 \`Informasi Layanan Darurat COVID-19\`
+/info                      \`Data Info mengenai COVID-19\`
+/cegah                  \`Info Pencegahan COVID-19\`
 
 #DiamDirumahCuk
 #SocialDistancing
@@ -39,40 +39,40 @@ const TELEGRAM_BOT_PROVINCES = `
 
 \`Perintah\`       \`Deskripsi\`
 ======================
-/aceh            \`Data Kasus COVID19 Aceh\`
-/bali              \`Data Kasus COVID19 Bali\`
-/banten         \`Data Kasus COVID19 Banten\`
-/bengkulu      \`Data Kasus COVID19 Bengkulu\`
-/gorontalo      \`Data Kasus COVID19 Gorontalo\`
-/jakarta          \`Data Kasus COVID19 Jakarta\`
-/jambi            \`Data Kasus COVID19 Jambi\`
-/jabar             \`Data Kasus COVID19 Jawa Barat\`
-/jateng           \`Data Kasus COVID19 Jawa Tengah\`
-/jatim             \`Data Kasus COVID19 Jawa Timur\`
-/kalbar            \`Data Kasus COVID19 Kalimantan Barat\`
-/kalsel             \`Data Kasus COVID19 Kalimantan Selatan\`
-/kalteng          \`Data Kasus COVID19 Kalimantan Tengah\`
-/kaltim            \`Data Kasus COVID19 Kalimantan Timur\`
-/kaltara            \`Data Kasus COVID19 Kalimantan Tenggara\`
-/kepbang         \`Data Kasus COVID19 Kepulauan Bangka\`
-/kepri              \`Data Kasus COVID19 Kepulauan Riau\`
-/lampung          \`Data Kasus COVID19 Lampung\`
-/maluku           \`Data Kasus COVID19 Maluku\`
-/maluta            \`Data Kasus COVID19 Maluku Utara\`
-/ntb                 \`Data Kasus COVID19 Nusa Tenggara Barat\`
-/ntt                  \`Data Kasus COVID19 Nusa Tenggara Timur\`
-/papua             \`Data Kasus COVID19 Papua\`
-/papbar            \`Data Kasus COVID19 Papua Barat\`
-/riau                 \`Data Kasus COVID19 Riau\`
-/sulbar              \`Data Kasus COVID19 Sulawesi Barat\`
-/sulsel               \`Data Kasus COVID19 Sulawesi Selatan\`
-/sulteng             \`Data Kasus COVID19 Sulawesi Tengah\`
-/sultra                \`Data Kasus COVID19 Sulawesi Tenggara\`
-/sulut                 \`Data Kasus COVID19 Sulawesi Utara\`
-/sumbar              \`Data Kasus COVID19 Sumatera Barat\`
-/sumsel               \`Data Kasus COVID19 Sumatera Selatan\`
-/sumut                \`Data Kasus COVID19 Sumatera Utara\`
-/yogya                \`Data Kasus COVID19 Yogyakarta\`
+/aceh            \`Data Kasus COVID-19 Aceh\`
+/bali              \`Data Kasus COVID-19 Bali\`
+/banten         \`Data Kasus COVID-19 Banten\`
+/bengkulu      \`Data Kasus COVID-19 Bengkulu\`
+/gorontalo      \`Data Kasus COVID-19 Gorontalo\`
+/jakarta          \`Data Kasus COVID-19 Jakarta\`
+/jambi            \`Data Kasus COVID-19 Jambi\`
+/jabar             \`Data Kasus COVID-19 Jawa Barat\`
+/jateng           \`Data Kasus COVID-19 Jawa Tengah\`
+/jatim             \`Data Kasus COVID-19 Jawa Timur\`
+/kalbar            \`Data Kasus COVID-19 Kalimantan Barat\`
+/kalsel             \`Data Kasus COVID-19 Kalimantan Selatan\`
+/kalteng          \`Data Kasus COVID-19 Kalimantan Tengah\`
+/kaltim            \`Data Kasus COVID-19 Kalimantan Timur\`
+/kaltara            \`Data Kasus COVID-19 Kalimantan Tenggara\`
+/kepbang         \`Data Kasus COVID-19 Kepulauan Bangka\`
+/kepri              \`Data Kasus COVID-19 Kepulauan Riau\`
+/lampung          \`Data Kasus COVID-19 Lampung\`
+/maluku           \`Data Kasus COVID-19 Maluku\`
+/maluta            \`Data Kasus COVID-19 Maluku Utara\`
+/ntb                 \`Data Kasus COVID-19 Nusa Tenggara Barat\`
+/ntt                  \`Data Kasus COVID-19 Nusa Tenggara Timur\`
+/papua             \`Data Kasus COVID-19 Papua\`
+/papbar            \`Data Kasus COVID-19 Papua Barat\`
+/riau                 \`Data Kasus COVID-19 Riau\`
+/sulbar              \`Data Kasus COVID-19 Sulawesi Barat\`
+/sulsel               \`Data Kasus COVID-19 Sulawesi Selatan\`
+/sulteng             \`Data Kasus COVID-19 Sulawesi Tengah\`
+/sultra                \`Data Kasus COVID-19 Sulawesi Tenggara\`
+/sulut                 \`Data Kasus COVID-19 Sulawesi Utara\`
+/sumbar              \`Data Kasus COVID-19 Sumatera Barat\`
+/sumsel               \`Data Kasus COVID-19 Sumatera Selatan\`
+/sumut                \`Data Kasus COVID-19 Sumatera Utara\`
+/yogya                \`Data Kasus COVID-19 Yogyakarta\`
 
 
 #DiamDirumahCuk
@@ -89,14 +89,25 @@ const TELEGRAM_BOT_INFO_TEXT = `
 
 - Pada beberapa kasus dipastikan hanya 5 hari setelah paparan pertama
 
-- Pada infeksi dengan kluster sebuah keluarga, timbulnya demam dan sindrom pernapasan terjadi sekitar 3-6 hari setelah paparan pertama\`
+- Pada infeksi dengan kasus klaster sebuah keluarga, timbulnya demam dan sindrom gangguan pernapasan terjadi sekitar 3-6 hari setelah paparan pertama\`
+
+*Apa saja Metode test COVID-19?*
+\`
+- Metode Real Time Polymerase Chain Reaction (RT-PCR) yang mengambil usapan lendir dari hidung atau tenggorokan dari Pasien
+
+- Metode Rapid Test yang mengambil sampel darah pasien positif Covid-19\`
+
+*Bagaimana 2 Metode test COVID-19 bekerja?*
+\`
+- RT-PCR mendeteksi keberadaan COVID-19 dengan mendeteksi material genetik RNA. Virus yang aktif memiliki material genetika yang bisa berupa DNA maupun RNA, Pada virus corona, material genetiknya adalah RNA.
+
+- Rapid Test mendeteksi keberadaan COVID-19 dari antibodi immunoglobulin yang berada dalam darah. Virus corona tidak hidup di darah, tetapi seseorang yang terinfeksi akan membentuk antibodi yang disebut immunoglobulin yang bisa dideteksi dalam darah.\`
 
 *Berapa lama waktu untuk test COVID-19?*
-
 \`
-- 1-3 Hari
-\`
+- 1-4 Hari lebih jika untuk Metode RT-PCR, Karena RT-PCR harus dikerjakan di laboratorium dengan standar biosafety level tertentu.
 
+- 20-40 Menit lebih untuk Metode Rapid Test, Karena Rapid test lebih praktis karena bisa dilakukan di mana saja\`
 `
 
 const TELEGRAM_BOT_PRECAUTIONS_TEXT = `
@@ -106,15 +117,15 @@ Cuci tangan dengan sabun atau Hand sanitizer sebelum menyentuh muka. Hindari kon
 
 *Jika seseorang punya gejala flu, tindakan apa yang harus dilakukan*
 \`
-Lakukan karantina mandiri, dan hubungi 119, atau hubungi rumah sakit yang memiliki peralatan memadai terhadap COVID19.\`
+Lakukan karantina mandiri, dan hubungi 119, atau hubungi rumah sakit yang memiliki peralatan memadai terhadap COVID-19.\`
 
 *Apakah masker, apd, Alcohol-swab wajib?*
 \`
-Tidak, Pakailah masker jika anda positif terkena gejala COVID-19 or atau mengunjungi seseorang yang mungkin terkena COVID-19. Masker hanya dapat digunakan sekali saja. Jika anda tidak sakit atau tidak mengunjungi seseorang yang sakit maka anda membuang-buang masker. Saat ini terdapat krisis pasokan masker, apd dan Alcohol-swab, jadi harap bijak dalam membeli serta memakai hal-hal yang disebutkan sebelumnya.\`
+Tidak, Pakailah masker jika anda positif terkena gejala COVID-19 or atau mengunjungi seseorang yang mungkin terkena COVID-19. Masker hanya dapat digunakan sekali saja, pastikan menggunakan Masker tipe N95 atau Masker bedah selain dari itu tidak akan ampuh untuk melawan COVID-19. Jika anda tidak sakit atau tidak mengunjungi seseorang yang sakit maka anda membuang-buang masker. Saat ini terdapat krisis pasokan masker, apd dan Alcohol-swab, jadi harap bijak dalam membeli serta memakai hal-hal yang disebutkan sebelumnya.\`
 
 *Jadi apa yang harus dilakukan?*
 \`
-Social Distancing dan Physical Distancing adalah hal yang wajib! Jangan jadi egois berlagak kebal, perdulikan orang-orang disekitar anda, ikuti anjuran pemerintah untuk tetap berdiam dirumah.\`
+Social Distancing dan Physical Distancing adalah hal yang wajib! Jangan jadi egois berlagak kebal, perdulikan orang-orang disekitar anda, ikuti anjuran pemerintah untuk tetap berdiam dirumah. Maksimalkan #WorkFromHome dan #LearnFromHome, jaga kesehatan serta pola makan dan tidur kalian semua. Semoga kita semua bisa melawan COVID-19 dengan cara menjadi lebih aware dan saling bahu-membahu dalam masa seperti ini.\`
 `
 
 const telegramBot = new Telegraf(TELEGRAM_BOT_TOKEN)
@@ -127,7 +138,7 @@ Meninggal: <%= data.deaths.value %>\` *(+<%= data.deaths.diff %>)*\`
 Sembuh: <%= data.recovered.value %>\` *(+<%= data.recovered.diff %>)*\`
 Dalam Perawatan: <%= data.active_care.value %>\` *(+<%= data.active_care.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -138,7 +149,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -149,7 +160,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -160,7 +171,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -171,7 +182,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -182,7 +193,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -193,7 +204,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -204,7 +215,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -217,7 +228,7 @@ Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*\`
 Total ODP: <%= data.total_odp.value %>\` *(+<%= data.total_odp.diff %>)*\`
 Total PDP <%= data.total_pdp.value %>\` *(+<%= data.total_pdp.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -228,7 +239,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -239,7 +250,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -250,7 +261,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -261,7 +272,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -272,7 +283,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -283,7 +294,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -294,7 +305,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -305,7 +316,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -316,7 +327,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -327,7 +338,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -338,7 +349,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -349,7 +360,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -360,7 +371,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -371,7 +382,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -382,7 +393,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -393,7 +404,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -404,7 +415,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -415,7 +426,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -426,7 +437,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -437,7 +448,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -448,7 +459,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -459,7 +470,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -470,7 +481,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -481,7 +492,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -492,7 +503,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -503,7 +514,7 @@ Terkonfirmasi: <%= data.total_positif.value %>\` *(+<%= data.total_positif.diff 
 Meninggal: <%= data.total_meninggal.value %>\` *(+<%= data.total_meninggal.diff %>)*\`
 Sembuh: <%= data.total_sembuh.value %>\` *(+<%= data.total_sembuh.diff %>)*
 \`
-Sumber data\` https://covid19-api.yggdrasil.id/
+Sumber data\` https://covid-19-api.yggdrasil.id/
   `, {})({ data })
 }
 
@@ -530,7 +541,7 @@ Call Center: <%= r.callCenter %>
 Hotline: <%= r.hotline %>\`
 <% }) %>
 
-\`Sumber data\` https://covid19-api.yggdrasil.id/ 
+\`Sumber data\` https://covid-19-api.yggdrasil.id/ 
   `, {})({ data })
 }
 
@@ -1166,7 +1177,7 @@ async function handleYogya(ctx) {
 
 async function handleHotline(ctx) {
   return new Promise(function (resolve, reject) {
-    axios.get('https://covid19-api.yggdrasil.id/hotline')
+    axios.get('https://covid-19-api.yggdrasil.id/hotline')
     .then(function (response) {
       try {
         ctx.replyWithMarkdown(buildHotline(response.data))
